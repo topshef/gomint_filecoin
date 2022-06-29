@@ -1,0 +1,9 @@
+#this works
+#https://www.askapache.com/htaccess/using-filesmatch-and-files-in-htaccess/
+<Files ~ "\.(txt|json)$">
+	Order deny,allow
+	Deny from all
+	Allow from 130.185.251.53
+</Files>
+
+#this doesnt <FilesMatch "\.(txt|json)$">
